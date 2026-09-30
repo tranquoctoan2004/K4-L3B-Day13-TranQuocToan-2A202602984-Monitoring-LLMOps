@@ -8,7 +8,7 @@ try:
     from langfuse import get_client, observe, propagate_attributes
 
     LANGFUSE_SDK_AVAILABLE = True
-except ImportError:  # pragma: no cover - chỉ dùng khi chưa cài requirements
+except ImportError:  # pragma: no cover
     LANGFUSE_SDK_AVAILABLE = False
 
     def observe(*args: Any, **kwargs: Any):
